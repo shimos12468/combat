@@ -12,9 +12,9 @@ namespace RPG.Movment
 {
     public class Mover : MonoBehaviour,IAction ,ISaveable
     {
-        [SerializeField] private Animator _anim;
-        [SerializeField] private NavMeshAgent agent;
-        [SerializeField] private Health health;
+        private Animator _anim;
+        private NavMeshAgent agent;
+        private Health health;
         [SerializeField]float maxSpeed =6f;
         void Awake()
         {
